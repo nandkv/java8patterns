@@ -21,11 +21,6 @@ public class CustomerDelegateTest {
 		classUnderTest = new CustomerDelegate();
 	}
 
-	@After
-	public void tearDown() throws Exception {
-		classUnderTest = null;
-	}
-
 	@Test(expected=NullPointerException.class)
 	public void testExecuteNullRequest() {
 		classUnderTest.execute(null);
@@ -43,4 +38,9 @@ public class CustomerDelegateTest {
 		assertNull(response.getMessages());
 	}
 	
+	@After
+	public void tearDown() throws Exception {
+		classUnderTest = null;
+	}
+
 }

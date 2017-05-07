@@ -13,8 +13,5 @@ public final class CustResponseDTO extends BaseResponseDTO {
 		return customerName;
 	}
 
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
-	}
 	
 }

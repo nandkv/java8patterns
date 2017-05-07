@@ -15,29 +15,16 @@ public abstract class BaseResponseDTO implements Serializable {
 		this.success = success;
 	}
 
-	public BaseResponseDTO(boolean success, List<String> messages) {
-		this.success = success;
-		this.messages = messages;
-	}
-
 	public boolean isSuccess() {
 		return success;
-	}
-
-	public void setSuccess(boolean success) {
-		this.success = success;
 	}
 
 	public List<String> getMessages() {
 		return messages;
 	}
-
-	public void setMessages(List<String> messages) {
-		this.messages = messages;
-	}
 	
 	public String toString() {
-		return ToStringBuilder.reflectionToString(this, ToStringStyle.DEFAULT_STYLE);
+		return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
 	}
 	
 }
