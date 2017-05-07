@@ -6,6 +6,6 @@
 #### Template Pattern using composition and applying to enterprise patterns -> package: com.patterns.template.composition
 
 ## Additional Changes
-#### Logging changes for log4j2 using lambda
+#### Logging changes for log4j2 using lambda, with performance enhancements where string is computed only if level is on avoiding if (logger.isLevelEnabled()) checks across the codebase
 #### JSR validation for the bean
 #### Tests for the composition using Lambda as well.
